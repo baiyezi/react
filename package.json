@@ -1,6 +1,6 @@
 {
   "name": "@baiyezi/react",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "React tools",
   "main": "dist/index.js",
   "repository": "git@github.com:baiyezi/react.git",
@@ -14,14 +14,17 @@
     "clean": "npx rimraf ./dist",
     "build": "npm run clean && tsc",
     "test": "jest",
-    "copy": "cp {README.md,package.json,CHANGELOG.md} dist",
-    "prepack": "npm run copy",
+    "postbuild": "cp README.md dist && cp package.json dist",
+    "postversion": "cp package.json ..",
     "release": "semantic-release"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@types/jest": "^27.0.1",
@@ -32,9 +35,5 @@
     "ts-jest": "^27.0.5",
     "typescript": "^4.4.2",
     "semantic-release": "^17.4.7"
-  },
-  "dependencies": {
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/git": "^9.0.1"
   }
 }

@@ -1,6 +1,6 @@
 # react
 
-Baiyezi's react tools.
+Baiyezi react tools.
 
 ## Installation
 
