@@ -2,18 +2,25 @@
 
 Baiyezi react tools.
 
+- [makeStore](#makeStore)
+
 ## Installation
 
-### NPM
+### npm
 
-```zsh
+```bash
 $ npm install @baiyezi/react
-or
-$ yarn add @baiyezi/react
+```
 
+### yarn
+
+```bash
+$ yarn add @baiyezi/react
 ```
 
 ## How to use
+
+### makeStore
 
 ```js
 import { makeStore } from '@baiyezi/react'
