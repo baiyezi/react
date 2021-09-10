@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/baiyezi/react/compare/v1.1.1...v1.1.2) (2021-09-10)
+
+
+### Bug Fixes
+
+* Update comments for makeStore ([f2c5d1f](https://github.com/baiyezi/react/commit/f2c5d1f2a1ee3e165fb8fb39bfa767a0603f8033))
+
 ## [1.1.1](https://github.com/baiyezi/react/compare/v1.1.0...v1.1.1) (2021-09-09)
 
 
